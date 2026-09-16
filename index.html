@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechVision - Login</title>
+
+    <link rel="stylesheet" href="./stily.css">
+</head>
+
+<body>
+
+    <!-- CONTROLE DO ACESSO -->
+    <input type="checkbox" id="acesso">
+
+    <!-- TELA DE LOGIN -->
+    <section class="login">
+
+        <div class="login-card">
+
+            <img src="./logo.png" alt="TechVision" class="logo">
+
+            <h1>Bem-vindo!</h1>
+
+            <p>
+                Acesse o sistema de gerenciamento
+                de Ordens de Serviço
+            </p>
+
+            <label for="usuario">Usuário</label>
+
+            <input
+                type="text"
+                id="usuario"
+                placeholder="Digite seu usuário"
+                required
+            >
+
+            <label for="senha">Senha</label>
+
+            <input
+                type="password"
+                id="senha"
+                placeholder="Digite sua senha"
+                required
+            >
+
+            <!-- BOTÃO ENTRAR -->
+            <label for="acesso" class="botao">
+                ENTRAR
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- SITE -->
+    <section class="site">
+
+        <!-- MENU -->
+        <aside>
+
+            <h2>TechVision</h2>
+
+            <nav>
+
+                <a href="#" class="ativo">
+                    🏠 Início
+                </a>
+
+                <a href="#">
+                    📋 Ordens de Serviço
+                </a>
+
+                <a href="#">
+                    👨‍🔧 Técnicos
+                </a>
+
+                <a href="#">
+                    👥 Clientes
+                </a>
+
+                <a href="#">
+                    📊 Relatórios
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- CONTEÚDO -->
+        <main>
+
+            <header>
+
+                <div>
+                    <h1>Olá, seja bem-vindo!</h1>
+
+                    <p>
+                        Sistema de gerenciamento de Ordens de Serviço
+                    </p>
+                </div>
+
+                <button>
+                    + Nova OS
+                </button>
+
+            </header>
+
+
+            <!-- CARDS -->
+            <section class="cards">
+
+                <div class="card">
+                    <span>📋</span>
+
+                    <div>
+                        <h2>12</h2>
+                        <p>Ordens abertas</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <span>🔧</span>
+
+                    <div>
+                        <h2>5</h2>
+                        <p>Em andamento</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <span>✅</span>
+
+                    <div>
+                        <h2>28</h2>
+                        <p>Concluídas</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- ORDENS -->
+            <section class="tabela">
+
+                <h2>Ordens de Serviço</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Nº OS</th>
+                            <th>Cliente</th>
+                            <th>Equipamento</th>
+                            <th>Técnico</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>001</td>
+                            <td>João Silva</td>
+                            <td>Computador</td>
+                            <td>Carlos</td>
+
+                            <td>
+                                <span class="status espera">
+                                    Aguardando
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>002</td>
+                            <td>Maria Santos</td>
+                            <td>Impressora</td>
+                            <td>Pedro</td>
+
+                            <td>
+                                <span class="status andamento">
+                                    Em andamento
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>003</td>
+                            <td>Empresa ABC</td>
+                            <td>Notebook</td>
+                            <td>Lucas</td>
+
+                            <td>
+                                <span class="status concluida">
+                                    Concluída
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </section>
+
+</body>
+
+</html>
